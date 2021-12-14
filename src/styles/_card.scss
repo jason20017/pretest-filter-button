@@ -1,0 +1,50 @@
+.product {
+  display: flex;
+  .filter {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    .btn {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      width: 10rem;
+      text-align: start;
+      padding-left: 0.5rem;
+      cursor: pointer;
+    }
+    .btn:active {
+      transform: translateY(4px);
+    }
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    .card-body {
+      margin: 1rem 1rem;
+      padding: 1.2rem;
+      border: 1px rgb(88, 83, 83) solid;
+
+      .card-image {
+        width: 20rem;
+        max-height: 13rem;
+        overflow: hidden;
+      }
+      .card-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.2rem;
+        color: rgb(245, 241, 184);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        padding: 0.3rem;
+        cursor: pointer;
+      }
+      .card-button:active {
+        transform: translateY(4px);
+      }
+    }
+  }
+}

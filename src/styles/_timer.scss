@@ -1,0 +1,43 @@
+.timer-conatiner {
+  display: block;
+  width: 100%;
+  margin-top: 5rem;
+  .timer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    width: 100%;
+    max-height: 5vh;
+    h1 {
+      margin: 0rem 5rem 0 12.3rem;
+      font-size: 2rem;
+    }
+    div:first-child {
+      text-align: center;
+    }
+    div:last-child {
+      border: 2px solid #fff;
+      border-radius: 3px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 1em;
+      text-align: center;
+    }
+    section p:first-child,
+    div:last-child span {
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .timer div:last-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
+}
